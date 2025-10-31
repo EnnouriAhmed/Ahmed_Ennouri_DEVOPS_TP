@@ -1,0 +1,7 @@
+L'image originale réalisée avec "bloated-go-app.dockerfile" faisait environ 800 MB (un peu plus) :
+my-go-app latest    017f8ccb607e   32 seconds ago   888MB
+La nouvelle image réalisée avec "5-optimized.dockerfile" fait exactement 15.6 MB :
+my-go-app latest    4328994677b9   36 minutes ago   15.6MB
+Les optimisations ont été réalisées de la manière suivante :
+Build multi-étape + image finale basée sur Alpine au lieu d'utiliser l'image compléte 
+Golang.
